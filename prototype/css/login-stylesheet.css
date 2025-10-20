@@ -38,7 +38,7 @@ body {
 /* === LEFT PANEL (IMAGE SIDE) === */
 .login-image {
   background: linear-gradient(rgba(6, 54, 114, 0.7), rgba(239, 1, 7, 0.7)),
-    url("/cannon-and-crest/prototype/images/hero-image.jpg");
+    url("/prototype/images/hero-image.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -201,13 +201,48 @@ body {
   transform: translateY(-2px);
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 800px) {
   .login-container {
     grid-template-columns: 1fr;
+    margin-top: 60px; 
   }
+
+  .back-home {
+    position: fixed; 
+    top: 16px;
+    left: 16px;
+    z-index: 1000;
+  }
+
   .login-image {
-    display: none;
+    display: flex;
+    height: 200px;
+    padding: 30px 20px;
+    background: linear-gradient(rgba(6, 54, 114, 0.8), rgba(239, 1, 7, 0.8)),
+      url("/prototype/images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login-image h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .login-image p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .login-form {
+    padding: 40px 25px;
+  }
+
+  .btn-login {
+    width: 100%;
   }
 }
-

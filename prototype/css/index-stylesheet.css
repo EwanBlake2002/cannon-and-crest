@@ -496,7 +496,7 @@ nav a:hover::after {
   justify-content: center; /* keeps text perfectly centred */
   gap: 6px; /* even spacing between title & text */
   text-align: center;
-  animation: fadeUp 0.8s ease forwards;
+  animation: fadeUp 0.8s ease;
 }
 
 .promo h4 {
@@ -506,7 +506,9 @@ nav a:hover::after {
   text-transform: uppercase;
   margin: 0;
   line-height: 1;
+  transition: all 0.35s ease-in-out; 
 }
+
 
 .promo p {
   font-family: "Open Sans", sans-serif;
