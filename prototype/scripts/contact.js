@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Redirect after a short pause
       setTimeout(() => {
-        window.location.href = "/prototype/html/index.html";
+        window.location.href = "/cannon-and-crest/prototype/html/index.html";
       }, 2200);
     }, 1200);
   });
@@ -142,3 +142,4 @@ document.addEventListener("DOMContentLoaded", () => {
     customIssueWrap.classList.remove("open");
   });
 });
+
