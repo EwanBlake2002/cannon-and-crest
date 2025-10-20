@@ -38,7 +38,7 @@ body {
 /* === LEFT PANEL (IMAGE SIDE) === */
 .login-image {
   background: linear-gradient(rgba(6, 54, 114, 0.7), rgba(239, 1, 7, 0.7)),
-    url("/prototype/images/hero-image.jpg");
+    url("/cannon-and-crest/prototype/images/hero-image.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -219,7 +219,7 @@ body {
     height: 200px;
     padding: 30px 20px;
     background: linear-gradient(rgba(6, 54, 114, 0.8), rgba(239, 1, 7, 0.8)),
-      url("/prototype/images/hero-image.jpg");
+      url("/cannon-and-crest/prototype/images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -246,3 +246,4 @@ body {
     width: 100%;
   }
 }
+
