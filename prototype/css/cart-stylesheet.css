@@ -690,7 +690,7 @@ nav a:hover::after {
 
 @media (max-width: 420px) {
   nav {
-    display: none;
+    display: flex;
   }
   .brand {
     font-size: 18px;

@@ -354,7 +354,7 @@ nav a:hover::after {
       rgba(6, 54, 114, 0.85),
       rgba(239, 1, 7, 0.75)
     ),
-    url("/cannon-and-crest/prototype/images/hero-image.jpg") center/cover no-repeat;
+    url("/prototype/images/hero-image.jpg") center/cover no-repeat;
   color: #fff;
   box-shadow: var(--shadow);
 }
@@ -595,10 +595,9 @@ nav a:hover::after {
 
 @media (max-width: 420px) {
   nav {
-    display: none;
+    display: flex;
   }
   .brand {
     font-size: 18px;
   }
 }
-

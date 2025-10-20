@@ -2,7 +2,7 @@
 :root {
   --red: #ef0107;
   --navy: #063672;
-  --accent: #1fc0a0; 
+  --accent: #1fc0a0;
   --gold: #d6a700;
   --bg: #fafafa;
   --muted: #f3f5f6;
@@ -16,7 +16,6 @@
   font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
 }
-
 
 * {
   box-sizing: border-box;
@@ -1005,7 +1004,7 @@ nav a:hover::after {
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
-  z-index: 9999; 
+  z-index: 9999;
 }
 
 #backToTop.show {
@@ -1120,7 +1119,7 @@ nav a:hover::after {
   }
 
   .header-actions {
-    display: none; 
+    display: none;
   }
 
   .section-header h2 {
@@ -1178,9 +1177,48 @@ nav a:hover::after {
   }
 }
 
+@media (max-width: 600px) {
+  .secondary {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 40px 0;
+  }
+
+  .secondary-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: none !important;
+  }
+
+  .secondary-card img {
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-content {
+    padding: 14px 10px;
+    text-align: center;
+  }
+
+  .secondary-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .secondary-card p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 420px) {
   nav {
-    display: none;
+    display: flex;
   }
   .brand {
     font-size: 18px;
