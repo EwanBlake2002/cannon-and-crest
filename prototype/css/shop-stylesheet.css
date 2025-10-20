@@ -349,7 +349,7 @@ nav a:hover::after {
 /* Hero Section */
 .shop-hero {
   background: linear-gradient(rgba(6, 54, 114, 0.8), rgba(6, 54, 114, 0.8)),
-    url('/prototype/images/hero-image.jpg') center/cover no-repeat;
+    url('/cannon-and-crest/prototype/images/hero-image.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 100px 20px 80px;
@@ -561,3 +561,4 @@ nav a:hover::after {
     font-size: 18px;
   }
 }
+
