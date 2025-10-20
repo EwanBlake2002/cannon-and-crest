@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cannon & Crest - Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/prototype/css/register-stylesheet.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/prototype/images/arsenal-logo.jpeg"
+    />
+    <script
+      src="https://kit.fontawesome.com/b89a958fe1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="/prototype/html/index.html" class="back-home"> ← Back to Home </a>
+
+    <div class="register-container">
+      <div class="register-image">
+        <h2>Welcome new face!</h2>
+        <p>Discover a new passion - become one of the Arsenal.</p>
+      </div>
+
+      <div class="register-form">
+        <h1>Sign Up</h1>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              required
+            />
+            <span class="toggle-password" id="togglePassword">👁️</span>
+          </div>
+
+          <button type="submit" class="btn-register">Register</button>
+        </form>
+
+        <div class="register-loading" id="registerLoading">Creating your account..</div>
+
+        <div class="links">
+          Already have an account?
+          <a href="/prototype/html/login.html">Login here</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/prototype/scripts/register.js"></script>
+  </body>
+</html>

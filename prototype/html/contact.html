@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cannon & Crest - Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/prototype/css/contact-stylesheet.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/prototype/images/arsenal-logo.jpeg"
+    />
+    <script
+      src="https://kit.fontawesome.com/b89a958fe1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="topbar">
+          <div class="brand">Cannon & Crest</div>
+          <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+          </div>
+          <nav id="navMenu">
+            <a href="/prototype/html/index.html">Home</a>
+            <a href="/prototype/html/shop.html">Shop</a>
+            <a href="#">Contact Us</a>
+            <a href="/prototype/html/about.html">About</a>
+          </nav>
+          <div class="header-actions">
+            <a href="/prototype/html/login.html" class="action-link">Sign In</a>
+            <a href="/prototype/html/cart.html" class="action-link">Cart (0)</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Contact Hero -->
+      <section class="contact-hero reveal-up">
+        <h1>Get in Touch</h1>
+        <p>
+          We’re here to help with orders, products, or anything Arsenal-related.
+        </p>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form reveal-up">
+        <form id="supportForm" class="my-form" novalidate>
+          <ul>
+            <!-- Category -->
+            <li>
+              <div class="field">
+                <select id="issueType" required>
+                  <option value="" disabled selected hidden>
+                    -- Please choose an option --
+                  </option>
+                  <option>Order Issue</option>
+                  <option>Product Question</option>
+                  <option>Delivery & Shipping</option>
+                  <option>Other</option>
+                </select>
+                <label for="issueType">Select Category *</label>
+                <div class="error-msg" id="err-issueType"></div>
+              </div>
+            </li>
+
+            <!-- Custom issue (smooth expand) -->
+            <li>
+              <div id="customIssueWrap" class="collapsible">
+                <div class="field">
+                  <input type="text" id="customIssue" placeholder=" " />
+                  <label for="customIssue">Describe your issue</label>
+                </div>
+              </div>
+            </li>
+
+            <!-- Name -->
+            <li>
+              <div class="grid grid-2">
+                <div class="field">
+                  <input type="text" id="firstName" placeholder=" " required />
+                  <label for="firstName">First Name *</label>
+                  <div class="error-msg" id="err-firstName"></div>
+                </div>
+                <div class="field">
+                  <input type="text" id="lastName" placeholder=" " required />
+                  <label for="lastName">Last Name *</label>
+                  <div class="error-msg" id="err-lastName"></div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Email / Phone -->
+            <li>
+              <div class="grid grid-2">
+                <div class="field">
+                  <input type="email" id="email" placeholder=" " required />
+                  <label for="email">Email *</label>
+                  <div class="error-msg" id="err-email"></div>
+                </div>
+                <div class="field">
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder=" "
+                    inputmode="tel"
+                  />
+                  <label for="phone">Phone (optional)</label>
+                </div>
+              </div>
+            </li>
+
+            <!-- Message -->
+            <li>
+              <div class="field">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Your Message *</label>
+                <div class="error-msg" id="err-message"></div>
+              </div>
+            </li>
+
+            <!-- Actions -->
+            <li>
+              <div class="grid grid-3 actions">
+                <div class="required-msg">* Required Fields</div>
+
+                <button class="btn-grid" id="submitBtn" type="submit">
+                  <span class="front">Submit</span>
+                  <span class="back" aria-hidden="true">
+                    <i class="fa fa-paper-plane"></i>
+                  </span>
+                </button>
+
+                <button class="btn-grid secondary" id="resetBtn" type="reset">
+                  <span class="front">Reset</span>
+                  <span class="back" aria-hidden="true">
+                    <i class="fa fa-eraser"></i>
+                  </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </form>
+
+        <!-- Success Message -->
+        <div
+          id="successMessage"
+          class="success-message"
+          role="status"
+          aria-live="polite"
+        >
+          <div class="tick">✓</div>
+          <h2>Thank you!</h2>
+          <p>Your message has been sent. Redirecting you to the home page...</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-col brand-col">
+            <h2 class="footer-logo">Cannon & Crest</h2>
+            <p class="footer-desc">
+              Your trusted destination for premium Arsenal merchandise — from
+              current kits to iconic retro gear. Authentic. Licensed. Legendary.
+            </p>
+          </div>
+
+          <div class="footer-col links-col">
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="/prototype/html/shop.html#kits">Home Kits</a></li>
+              <li><a href="/prototype/html/shop.html#training">Training</a></li>
+              <li><a href="/prototype/html/shop.html#footwear">Footwear</a></li>
+              <li>
+                <a href="/prototype/html/shop.html#accessories">Accessories</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col info-col">
+            <h3>Connect</h3>
+            <ul class="social-links">
+              <li>
+                <a href="https://x.com/arsenal" target="_blank"
+                  ><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/arsenal/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/arsenal/videos"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+            <p class="footer-note">
+              © 2025 Cannon & Crest preview. Front-end only.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <button id="backToTop" title="Back to top">↑</button>
+    <script src="/prototype/scripts/contact.js"></script>
+  </body>
+</html>

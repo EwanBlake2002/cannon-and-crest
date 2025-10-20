@@ -1,0 +1,212 @@
+/* === BASE TOKENS === */
+:root {
+  --red: #ef0107;
+  --navy: #063672;
+  --accent: #1fc0a0;
+  --gold: #d6a700;
+  --bg: #fafafa;
+  --muted: #f3f5f6;
+  --text: #222222;
+  --card-radius: 12px;
+  --shadow: 0 6px 20px rgba(17, 17, 17, 0.06);
+  --transition: 250ms ease;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(135deg, var(--navy), var(--red));
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* === CONTAINER === */
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  max-width: 960px;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* === LEFT PANEL (IMAGE SIDE) === */
+.login-image {
+  background: linear-gradient(rgba(6, 54, 114, 0.7), rgba(239, 1, 7, 0.7)),
+    url("/prototype/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-image h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+
+.login-image p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* === RIGHT PANEL (FORM SIDE) === */
+.login-form {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--navy);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all var(--transition);
+}
+
+.form-group input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(31, 192, 160, 0.2);
+  outline: none;
+}
+
+/* Eye icon */
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 34px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666;
+  transition: color var(--transition);
+}
+
+.toggle-password:hover {
+  color: var(--accent);
+}
+
+/* Buttons */
+.btn-login {
+  background: linear-gradient(135deg, var(--red), var(--gold));
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(239, 1, 7, 0.3);
+}
+
+.links {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.links a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+/* === LOGIN ANIMATION === */
+.login-loading {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--navy);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.login-loading.active {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-home {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: var(--bg);
+  background: var(--red);
+  padding: 10px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(239, 1, 7, 0.3);
+}
+.back-home:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 800px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+  .login-image {
+    display: none;
+  }
+}
