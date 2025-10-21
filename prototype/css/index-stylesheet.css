@@ -175,6 +175,11 @@ nav a:hover::after {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+#navMenu{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 /* --- HERO SECTION --- */
 .hero {
   position: relative;
@@ -1241,4 +1246,5 @@ nav a:hover::after {
   display: flex;
   justify-content: center;
 }
+
 
