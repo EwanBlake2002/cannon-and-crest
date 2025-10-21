@@ -175,6 +175,11 @@ nav a:hover::after {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+#navMenu{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 /* --- FOOTER BASE --- */
 .site-footer {
   background: linear-gradient(135deg, var(--navy), var(--red), var(--gold));
@@ -698,4 +703,5 @@ nav a:hover::after {
     font-size: 18px;
   }
 }
+
 
