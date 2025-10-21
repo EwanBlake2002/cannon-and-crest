@@ -67,6 +67,8 @@ header.scrolled {
   gap: 32px;
   position: relative;
   padding: 16px 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .brand {
@@ -1239,3 +1241,4 @@ nav a:hover::after {
   display: flex;
   justify-content: center;
 }
+
